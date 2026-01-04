@@ -24,7 +24,6 @@ jobs:
         run: go build -v ./...
 
       - name: Test
-        # O "|| true" garante que a pipeline não para se ainda não existirem testes unitários
         run: go test -v ./... || true
 
   deploy:
